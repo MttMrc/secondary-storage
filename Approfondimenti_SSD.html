@@ -14,46 +14,57 @@
 <section class="subtitle">
     <h1>TLC and MLC Cells</h1>
 </section>
-<p>NAND cells store information in the form of electrical charge. Each cell can contain multiple bits depending on the amount of charge present:</p>
-<div class="center">
-    <ul>
-        <li> <b>SLC Cells (Single Level Cell):</b> store <b>1 bit</b> per cell (0 or 1).</li>
-        <li> <b>MLC Cells (Multi Level Cell):</b> store <b>2 bits</b> per cell (00, 01, 10, 11).</li>
-        <li> <b>TLC Cells (Triple Level Cell):</b> store <b>3 bits</b> per cell (000, 001, 010, 011, 100, 101, 110, 111).</li>
-    </ul>
-</div>
+<main class="content">
+    <p>NAND cells store information in the form of electrical charge. Each cell can contain multiple bits depending on
+        the amount of charge present:</p>
+    <div>
+        <ul>
+            <li><b>SLC Cells (Single Level Cell):</b> store <b>1 bit</b> per cell (0 or 1).</li>
+            <li><b>MLC Cells (Multi Level Cell):</b> store <b>2 bits</b> per cell (00, 01, 10, 11).</li>
+            <li><b>TLC Cells (Triple Level Cell):</b> store <b>3 bits</b> per cell (000, 001, 010, 011, 100, 101, 110,
+                111).
+            </li>
+        </ul>
+    </div>
 
-<table>
-    <tr>
-        <th>CHARACTERISTIC</th>
-        <th>MLC (2 bits per cell)</th>
-        <th>TLC (3 bits per cell)</th>
-    </tr>
-    <tr>
-        <th>Storage Capacity</th>
-        <td>Lower compared to TLC</td>
-        <td>Higher capacity with the same physical space</td>
-    </tr>
-    <tr>
-        <th>Speed</th>
-        <td>Faster (read/write)</td>
-        <td>Slower due to managing 3 bits</td>
-    </tr>
-    <tr>
-        <th>Endurance (write cycles)</th>
-        <td>About 3,000-10,000 cycles</td>
-        <td>1,000-3,000 cycles</td>
-    </tr>
-    <tr>
-        <th>Cost</th>
-        <td>More expensive</td>
-        <td>Less expensive</td>
-    </tr>
-    <tr>
-        <th>Reliability</th>
-        <td>Higher reliability and durability</td>
-        <td>Lower long-term reliability</td>
-    </tr>
-</table>
+    <table>
+        <tr>
+            <th>CHARACTERISTIC</th>
+            <th>MLC (2 bits per cell)</th>
+            <th>TLC (3 bits per cell)</th>
+        </tr>
+        <tr>
+            <th>Storage Capacity</th>
+            <td>Lower compared to TLC</td>
+            <td>Higher capacity with the same physical space</td>
+        </tr>
+        <tr>
+            <th>Speed</th>
+            <td>Faster (read/write)</td>
+            <td>Slower due to managing 3 bits</td>
+        </tr>
+        <tr>
+            <th>Endurance (write cycles)</th>
+            <td>About 3,000-10,000 cycles</td>
+            <td>1,000-3,000 cycles</td>
+        </tr>
+        <tr>
+            <th>Cost</th>
+            <td>More expensive</td>
+            <td>Less expensive</td>
+        </tr>
+        <tr>
+            <th>Reliability</th>
+            <td>Higher reliability and durability</td>
+            <td>Lower long-term reliability</td>
+        </tr>
+    </table>
+    <br>
+    <input class="button" type="button" onclick="location.href='./index.html';" value="Homepage"/>
+</main>
+
+<footer class="footer">
+    <p>&copy; Matteo Maruccia, John Miloti, Mario Montanari</p>
+</footer>
 </body>
 </html>

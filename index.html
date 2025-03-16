@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Secondary Storage</title>
+</head>
+<body>
+<style>HTML,BODY{cursor: url("https://downloads.totallyfreecursors.com/cursor_files/rainbow-ani.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/rainbow-ani3.gif"), auto;}</style>
+<nav class="title">
+    <h1>Secondary Storage</h1>
+</nav>
+<main class="content">
+    <section>
+        <h1 class="disclaimer" style="font-size: large; font-weight: bolder">Disclaimer</h1>
+        <br/>
+        <div class="disclaimer">
+            <h3>The book originally explains only hard disk drives (HDDs), but since that type of storage is becoming outdated, we are going to expand on SSDs (Solid State Drives), the current standard for secondary storage.</h3>
+            <h3>SSDs were only briefly mentioned as an alternative for hard disks in the book, as they were still in development at the time of its writing. However, they have now become the preferred choice for many applications.</h3>
+        </div>
+    </section>
+    <br/>
+    <section class="subtitle">
+        <h1>HDD - Hard Disk Drive</h1>
+    </section>
+    <br/>
+    <section class="media">
+        <div class="media">
+            <img class="media" src="./Media/HDD.jpg">
+            <p>The two types of HDDs (2.5 and 3.5 inches)</p>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <h3>The hard disk drive (HDD) was the most common type of magnetic storage for several decades.</h3>
+        <h3>It was used as the primary internal storage device in computers, located inside the chassis. Some models could be external or even removable.</h3>
+        <h3>All types of hard disks consist of the following components:</h3>
+        <ul>
+            <li><strong>Platters</strong>: One or more rigid, fast-rotating discs coated with magnetic material.</li>
+            <li><strong>Read/Write Heads</strong>: Tiny electromagnetic iron cones wrapped in a wire, responsible for writing and reading data on the surface.</li>
+            <li><strong>Actuator Arm</strong>: Moves the read/write heads across the platters to access different data locations.</li>
+            <li><strong>Spindle Motor</strong>: Rotates the platters at high speeds, typically between 5,400 and 15,000 RPM.</li>
+        </ul>
+        <h3>Working Mechanism of HDDs:</h3>
+        <ul>
+            <li>As the platters spin, the write head magnetizes regions on the disk surface, storing binary data.</li>
+            <li>The read head then detects the magnetic field and converts it into an electrical signal, which the computer processes as data.</li>
+        </ul>
+    </section>
+    <br/>
+    <section class="subtitle">
+        <h1>SSD - Solid State Drive</h1>
+    </section>
+    <br/>
+    <section class="media">
+        <div class="media">
+            <img class="media" src="./Media/SSD.jpg">
+            <p>The ssd NVME that we mounted during PCTO</p>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <h3>Unlike HDDs, Solid State Drives (SSDs) use flash memory to store data, eliminating moving mechanical parts.</h3>
+        <h3>SSDs are significantly faster and more reliable than HDDs, making them the preferred choice for modern computing.</h3>
+        <h3>Key Components of SSDs:</h3>
+        <ul>
+            <li><strong>NAND Flash Memory</strong>: A type of non-volatile memory that retains data even without power.</li>
+            <li><strong>Controller</strong>: Manages data storage, retrieval, and wear leveling to extend the drive's lifespan.</li>
+            <li><strong>Cache Memory</strong>: Temporary storage to speed up read/write operations.</li>
+        </ul>
+        <h3>Advantages of SSDs over HDDs:</h3>
+        <ul>
+            <li>Faster read/write speeds, improving overall system performance.</li>
+            <li>No moving parts, reducing the risk of mechanical failure.</li>
+            <li>Lower power consumption, increasing battery life in portable devices.</li>
+            <li>More resistant to physical shock and vibrations.</li>
+        </ul>
+    </section>
+    <br/>
+    <section class="subtitle">
+        <h1>Future of Secondary Storage</h1>
+    </section>
+    <br/>
+    <section>
+        <h3>New storage technologies are emerging to replace or complement SSDs, such as:</h3>
+        <ul>
+            <li><strong>NVMe (Non-Volatile Memory Express)</strong>: A faster storage protocol optimized for SSDs, improving performance in gaming and high-speed computing.</li>
+            <li><strong>Optane Memory</strong>: A type of storage that bridges the gap between RAM and SSDs, offering ultra-fast data access.</li>
+            <li><strong>Holographic Storage</strong>: A developing technology that uses laser beams to store data in three-dimensional patterns.</li>
+        </ul>
+        <h3>As technology advances, secondary storage will continue to evolve, providing faster, more reliable, and higher-capacity solutions.</h3>
+    </section>
+</main>
+<footer class="footer">
+    <p>&copy; Matteo Maruccia, John Miloti, Mario Montanari</p>
+</footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let video = document.querySelector("video");
+
+        // Disabilita il menu contestuale (click destro)
+        video.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+
+        // Evita il drag & drop del video
+        video.addEventListener("dragstart", function(event) {
+            event.preventDefault();
+        });
+    });
+</script>
+</html>
